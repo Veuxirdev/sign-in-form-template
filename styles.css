@@ -16,6 +16,8 @@ body{
     margin: 0;
 }
 
+/*Logo section*/
+
 .logo-container{
     display: flex;
     flex-direction: column;
@@ -24,12 +26,9 @@ body{
     background-image: url(images/cat-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
-.form-container{
-    width: 65vw;
-}
 .logo{
     display: flex;
     justify-content: center;
@@ -55,4 +54,100 @@ body{
 }
 .author-container p > a{
     color: white;
+}
+
+/*Form section*/
+.welcome{
+    padding: 60px 0px 0px 60px;
+}
+.welcome p{
+    max-width: 60ch;
+    font-family: Tahoma, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+.welcome p span{
+    display: block;
+}
+.welcome p > span + span{
+    margin-top: 36px;
+}
+.form-container{
+    width: 65vw;
+    background-color: rgb(245, 245, 245);
+}
+.white-bg{
+    background-color: rgb(255, 255, 255);
+    padding: 20px 60px 20px 60px;
+    margin-top: 60px;
+}
+form > p{
+    font-family: Tahoma, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.form-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    margin-right: 60px;
+}
+
+label{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+input:invalid:focus + label::after{
+    content: " (" attr(data-help) ")";
+    color: red;
+}
+
+input{
+    width: 250px;
+    height: 24px;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+input:focus{
+    outline-color: blue;
+}
+input:invalid:focus{
+    border-color: red;
+}
+.form-end{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.form-end p{
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+}
+.form-end > p > a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 600;
+}
+
+button{
+    color: white;
+    background-color: #596D48;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 50px 15px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px rgb(118, 118, 118);
 }
