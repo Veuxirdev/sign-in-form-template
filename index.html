@@ -28,37 +28,37 @@
                 <p>Let's do this!</p>
                 <div class="form-row">
                     <div class="input-container">
-                        <input type="text" id="first_name" title="Only use letters" pattern="[A-Za-z]+">
-                        <label data-help="Only use letters" for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" title="Please only use letters" pattern="[A-Za-z]+" placeholder="Hikaru">
+                        <label for="first_name" data-help="Please only use letters">FIRST NAME</label>
                     </div>
                     <div class="input-container">
-                        <input type="text" id="last_name">
-                        <label for="last_name">LAST NAME</label>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-container">
-                        <input type="email" id="email">
-                        <label for="email">EMAIL</label>
-                    </div>
-                    <div class="input-container">
-                        <input type="text" id="phone_number">
-                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="text" id="last_name" title="Please only use letters" pattern="[A-Za-z]+" placeholder="Nakamura">
+                        <label for="last_name" data-help="Please only use letters">LAST NAME</label>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-container">
-                        <input type="text" id="password" pattern=".{6,16}" required>
+                        <input type="email" id="email" placeholder="example@mail.com">
+                        <label for="email" data-help="Please enter a valid email">EMAIL</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" id="phone_number" title="Please enter a valid phone number" placeholder="Ex: 123-456-7890" pattern="\d{3}-\d{3}-\d{4}">
+                        <label for="phone_number" data-help="Please enter a valid Phone number">PHONE NUMBER</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-container">
+                        <input type="password" id="password" pattern=".{6,16}" required>
                         <label for="password" data-help="The length must be between 6 and 16">PASSWORD</label>
                     </div>
                     <div class="input-container">
-                        <input type="text" id="password_confirm" pattern=".{6,16}" required>
-                        <label for="password_confirm" data-help="The two passwords field should match">CONFIRM PASSWORD</label>
+                        <input type="password" id="password_confirm" pattern=".{6,16}" required>
+                        <label for="password_confirm" data-help="The two passwords fields should match">CONFIRM PASSWORD</label>
                     </div>
                 </div>
         </div>
             <div class="form-end">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
                 <p>Already have an account? <a href="#" class="log-in">Log in</a></p>
             </div>
         </form>
